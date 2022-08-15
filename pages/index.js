@@ -67,3 +67,13 @@ export default function Home() {
     </div>
   )
 }
+
+export function getStaticProps() {
+  return {
+    props: {
+      data: {
+        recipes: [{title: "Pineapple Smoothie"}],
+      },
+    },
+  };
+}
